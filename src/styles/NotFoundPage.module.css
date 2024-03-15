@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 0rem auto;
+}
+
+.container img {
+  margin: 0rem auto;
+}
+
+.container button {
+  width: fit-content;
+  font-size: 1.1rem;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  margin: 0rem auto;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}

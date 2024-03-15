@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container h3 {
+  font-size: 1.8rem;
+  color: var(--color-green);
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  list-style-position: inside;
+  gap: 0.5rem;
+}
+
+.container ul li::marker {
+  color: var(--color-green);
+}
+
+.container ul li {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 500px) {
+  .container ul {
+    gap: 1rem;
+  }
+}

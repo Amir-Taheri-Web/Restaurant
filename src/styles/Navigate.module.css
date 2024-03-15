@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.container a {
+  width: 140px;
+  height: 50px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .container  {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}

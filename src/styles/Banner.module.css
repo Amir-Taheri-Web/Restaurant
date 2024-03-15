@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.left div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.left h2 {
+  font-size: 1.8rem;
+  border-bottom: 3px solid var(--color-green);
+  width: fit-content;
+}
+
+.left span {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.left p {
+  color: var(--color-gray);
+  font-size: 1.1rem;
+}
+
+.left a {
+  background-color: var(--color-green);
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  color: var(--color-white);
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}

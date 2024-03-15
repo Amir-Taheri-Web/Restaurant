@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.subContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.subContainer select {
+  width: 200px;
+  border: 2px solid var(--color-green);
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.subContainer button {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dataContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.dataContainer img {
+  width: 400px;
+}
+
+.dataContainer ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 3rem 2rem;
+  width: 100%;
+  align-content: center;
+}

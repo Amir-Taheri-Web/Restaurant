@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container h3 {
+  color: var(--color-green);
+  font-size: 1.8rem;
+}
+
+.subContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.subContainer div {
+  width: 150px;
+  height: 150px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 500px) {
+  .subContainer {
+     justify-content: center;
+  }
+}
