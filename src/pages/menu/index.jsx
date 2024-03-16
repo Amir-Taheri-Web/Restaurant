@@ -9,12 +9,12 @@ const Menu = ({ foods }) => {
 };
 
 const getStaticProps = async () => {
-  const res = await fetch("http://localhost:4000/data");
+  const res = await fetch(`${process.env.BASE_URL}/data`);
   const data = await res.json();
 
   return {
     props: { foods: data },
-    revalidate: 1 * 60 * 60, //1 hour
+    revalidate: process.env.REVALIDATE, //1 hour
   };
 };
 

@@ -14,7 +14,7 @@ const FoodDetails = ({ data }) => {
 };
 
 const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:4000/data");
+  const res = await fetch(`${process.env.BASE_URL}/data`);
   const json = await res.json();
 
   const data = json.slice(0, 10);
@@ -34,7 +34,7 @@ const getStaticProps = async (context) => {
     params: { foodId },
   } = context;
 
-  const res = await fetch(`http://localhost:4000/data/${foodId}`);
+  const res = await fetch(`${process.env.BASE_URL}/data/${foodId}`);
   const data = await res.json();
 
   if (!data.id) {
@@ -45,7 +45,7 @@ const getStaticProps = async (context) => {
 
   return {
     props: { data },
-    revalidate: 1 * 60 * 60, //1 hour
+    revalidate: +process.env.REVALIDATE, //1 hour
   };
 };
 
