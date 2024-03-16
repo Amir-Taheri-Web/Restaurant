@@ -1,10 +1,11 @@
+import Loader from "@/components/modules/Loader";
 import FoodDetailsPage from "@/components/templates/FoodDetailsPage";
 import { useRouter } from "next/router";
 
 const FoodDetails = ({ data }) => {
   const router = useRouter();
 
-  if (router.isFallback) return <h2>Loading...</h2>;
+  if (router.isFallback) return <Loader />;
 
   return (
     <>

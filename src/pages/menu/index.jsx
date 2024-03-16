@@ -14,7 +14,7 @@ const getStaticProps = async () => {
 
   return {
     props: { foods: data },
-    revalidate: process.env.REVALIDATE, //1 hour
+    revalidate: +process.env.REVALIDATE, //1 hour
   };
 };
 

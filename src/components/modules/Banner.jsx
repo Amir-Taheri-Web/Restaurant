@@ -15,7 +15,7 @@ const Banner = () => {
             scooters, bikes, or on foot.
           </p>
         </div>
-        <Link href="menu">See All</Link>
+        <Link href="/menu">See All</Link>
       </div>
 
       <div className={styles.right}>
